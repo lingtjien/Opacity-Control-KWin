@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+      http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
+  <kcfgfile name=""/>
+  <group name="">
+    <entry name="opacityValue" type="double">
+      <label>default opacity value</label>
+      <default>0.9</default>
+    </entry>
+    <entry name="opacityShow" type="bool">
+      <label>default state of opacity on/off at start</label>
+      <default>true</default>
+    </entry>
+    <entry name="blur" type="bool">
+      <label>blur</label>
+      <default>true</default>
+    </entry>
+    <entry name="ignoredTypes" type="string">
+      <label>ignored types</label>
+      <default>specialWindow</default>
+    </entry>
+    <entry name="ignoredClients" type="string">
+      <label>ignored clients</label>
+      <default>ksmserver</default>
+    </entry>
+    <entry name="ignoredCaptions" type="string">
+      <label>ignored captions</label>
+      <default></default>
+    </entry>
+  </group>
+</kcfg>
