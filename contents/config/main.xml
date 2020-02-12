@@ -18,15 +18,15 @@
       <default>true</default>
     </entry>
     <entry name="ignoredTypes" type="string">
-      <label>ignored types</label>
+      <label>ignored client types</label>
       <default>specialWindow</default>
     </entry>
-    <entry name="ignoredClients" type="string">
-      <label>ignored clients</label>
-      <default>ksmserver</default>
+    <entry name="ignoredNames" type="string">
+      <label>ignored client names</label>
+      <default>ksmserver, inkscape, gimp, krita, gwenview</default>
     </entry>
     <entry name="ignoredCaptions" type="string">
-      <label>ignored captions</label>
+      <label>ignored client captions</label>
       <default></default>
     </entry>
   </group>

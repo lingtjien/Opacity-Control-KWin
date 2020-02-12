@@ -7,13 +7,13 @@
     <x>0</x>
     <y>0</y>
     <width>270</width>
-    <height>180</height>
+    <height>210</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
     <width>270</width>
-    <height>180</height>
+    <height>210</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -25,7 +25,7 @@
      <x>10</x>
      <y>9</y>
      <width>248</width>
-     <height>165</height>
+     <height>191</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="main">
@@ -34,14 +34,14 @@
       <item>
        <widget class="QCheckBox" name="kcfg_blur">
         <property name="text">
-         <string>blur</string>
+         <string>Blur</string>
         </property>
        </widget>
       </item>
       <item>
        <widget class="QCheckBox" name="kcfg_opacityShow">
         <property name="text">
-         <string>opacity</string>
+         <string>Opacity</string>
         </property>
        </widget>
       </item>
@@ -65,11 +65,48 @@
      </widget>
     </item>
     <item>
+     <layout class="QHBoxLayout" name="ignoredHeader">
+      <item>
+       <spacer name="ignoredHeaderSpacerLeft">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="ignoredHeaderLabel">
+        <property name="text">
+         <string>Ignored</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="ignoredHeaderSpacerRight">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
      <layout class="QHBoxLayout" name="ignoredTypes">
       <item>
        <widget class="QLabel" name="ignoredTypesLabel">
         <property name="text">
-         <string>Ignored Types</string>
+         <string>Types</string>
         </property>
        </widget>
       </item>
@@ -83,16 +120,16 @@
      </layout>
     </item>
     <item>
-     <layout class="QHBoxLayout" name="ignoredClients">
+     <layout class="QHBoxLayout" name="ignoredNames">
       <item>
-       <widget class="QLabel" name="ignoredClientsLabel">
+       <widget class="QLabel" name="ignoredNamesLabel">
         <property name="text">
-         <string>Ignored Clients</string>
+         <string>Names</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="kcfg_ignoredClients">
+       <widget class="QLineEdit" name="kcfg_ignoredNames">
         <property name="text">
          <string/>
         </property>
@@ -105,7 +142,7 @@
       <item>
        <widget class="QLabel" name="ignoredCaptionsLabel">
         <property name="text">
-         <string>Ignored Captions</string>
+         <string>Captions</string>
         </property>
        </widget>
       </item>

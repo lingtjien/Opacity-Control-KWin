@@ -40,7 +40,7 @@ Item {
       },
       ignored: {
         types: Algorithm.trimSplitString(KWin.readConfig('ignoredTypes', 'specialWindow')),
-        clients: Algorithm.trimSplitString(KWin.readConfig('ignoredClients', 'ksmserver')),
+        names: Algorithm.trimSplitString(KWin.readConfig('ignoredNames', 'ksmserver, inkscape, gimp, krita, gwenview')),
         captions: Algorithm.trimSplitString(KWin.readConfig('ignoredCaptions', ''))
       }
     };
@@ -78,10 +78,9 @@ Item {
 
         if (Parameters.ignored.captions.includes(client.caption.toString()))
           return false;
-        for (let ignored of Parameters.ignored.clients) {
-          if (client.resourceClass.toString().includes(ignored) || client.resourceName.toString().includes(ignored)) {
+        for (let ignored of Parameters.ignored.names) {
+          if (client.resourceClass.toString().includes(ignored) || client.resourceName.toString().includes(ignored))
             return false;
-          }
         }
         return true;
       },
@@ -94,15 +93,13 @@ Item {
         if (!Client.validate(client))
           return false;
 
-        if (Added.all.hasOwnProperty(client.windowId)) {
+        if (Added.all.hasOwnProperty(client.windowId))
           client.opacity = Added.all[client.windowId] ? Parameters.opacity.value : 1;
-        } else {
+        else
           client.opacity = Parameters.opacity.show ? Parameters.opacity.value : 1;
-        }
 
-        if (Parameters.blur) {
+        if (Parameters.blur)
           Client.blur(client);
-        }
         return true;
       }
     }
