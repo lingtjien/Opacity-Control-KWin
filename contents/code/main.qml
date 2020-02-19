@@ -115,6 +115,7 @@ Item {
     // main
     // ----
     Render();
+    workspace.clientAdded.connect(Client.render);
     workspace.clientActivated.connect(Client.render);
     workspace.clientRemoved.connect((client) => {
       return Added.remove(client);
