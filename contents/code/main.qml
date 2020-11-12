@@ -40,7 +40,7 @@ Item {
       },
       ignored: {
         types: Algorithm.trimSplitString(KWin.readConfig('ignoredTypes', 'specialWindow')),
-        names: Algorithm.trimSplitString(KWin.readConfig('ignoredNames', 'ksmserver, inkscape, gimp, krita, gwenview')),
+        names: Algorithm.trimSplitString(KWin.readConfig('ignoredNames', 'ksmserver, inkscape, gimp, krita, gwenview, vlc')),
         captions: Algorithm.trimSplitString(KWin.readConfig('ignoredCaptions', ''))
       }
     };

@@ -23,7 +23,7 @@
     </entry>
     <entry name="ignoredNames" type="string">
       <label>ignored client names</label>
-      <default>ksmserver, inkscape, gimp, krita, gwenview</default>
+      <default>ksmserver, inkscape, gimp, krita, gwenview, vlc</default>
     </entry>
     <entry name="ignoredCaptions" type="string">
       <label>ignored client captions</label>
