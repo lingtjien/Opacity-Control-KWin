@@ -17,13 +17,9 @@
       <label>blur</label>
       <default>true</default>
     </entry>
-    <entry name="ignoredTypes" type="string">
-      <label>ignored client types</label>
-      <default>specialWindow</default>
-    </entry>
     <entry name="ignoredNames" type="string">
       <label>ignored client names</label>
-      <default>ksmserver, inkscape, gimp, krita, gwenview, vlc</default>
+      <default>ksmserver, latte-dock, Plasma, plasma, plasma-desktop, plasmashell, plugin-container, inkscape, gimp, krita, gwenview, vlc</default>
     </entry>
     <entry name="ignoredCaptions" type="string">
       <label>ignored client captions</label>

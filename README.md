@@ -9,7 +9,7 @@ same as other kwin scripts such as my grid-tiling script just replace `grid-tili
 - set the opacity `opacity`
 - set opacity default state
 - set `blur`
-- define ignored client `types/names/captions`
+- define ignored client `names/captions`
 
 ## Recommended Setup
 - set shortcut `Opacity-Control: Toggle Active` to `Meta+O`

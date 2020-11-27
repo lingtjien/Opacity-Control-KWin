@@ -5,7 +5,7 @@ Icon=preferences-system-windows-script-test
 Type=Service
 
 X-Plasma-API=declarativescript
-X-Plasma-MainScript=code/main.qml
+X-Plasma-MainScript=code/Main.qml
 
 X-KDE-PluginInfo-Author=LinG
 X-KDE-PluginInfo-Name=opacity-control
