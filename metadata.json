@@ -1,0 +1,22 @@
+{
+  "KPlugin": {
+    "Authors": [
+      {
+        "Name": "LinG"
+      }
+    ],
+    "Description": "Controls opacity (blur) of all windows",
+    "Icon": "preferences-system-windows-script-test",
+    "Id": "opacity-control",
+    "License": "GPL",
+    "Name": "Opacity Control",
+    "ServiceTypes": [
+      "KWin/Script"
+    ],
+    "Version": "0.0.1"
+  },
+  "X-KDE-ConfigModule": "kwin/effects/configs/kcm_kwin4_genericscripted",
+  "X-KDE-PluginKeyword": "opacity-control",
+  "X-Plasma-API": "declarativescript",
+  "X-Plasma-MainScript": "code/Main.qml"
+}

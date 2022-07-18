@@ -14,3 +14,6 @@ same as other kwin scripts such as my grid-tiling script just replace `grid-tili
 ## Recommended Setup
 - set shortcut `Opacity-Control: Toggle Active` to `Meta+O`
 - set shortcut `Opacity-Control: Toggle All` to `Ctrl+Meta+O`
+
+## Notes
+- Blur doesn't work on wayland with this implementation
